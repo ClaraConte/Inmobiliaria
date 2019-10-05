@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inmueble"
+            android:icon="@drawable/ic_inmobiliaria_home"
+            android:title="@string/menu_inmueble" />
+        <item
+            android:id="@+id/nav_inquilino"
+            android:icon="@drawable/ic_inmobiliaria_inquilino"
+            android:title="@string/menu_inquilino" />
+        <item
+            android:id="@+id/nav_pago"
+            android:icon="@drawable/ic_inmobiliaria_pago"
+            android:title="@string/menu_pago" />
+        <item
+            android:id="@+id/nav_propietario"
+            android:icon="@drawable/ic_inmobiliaria_propietario"
+            android:title="@string/menu_propietario" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contrato"
+                android:icon="@drawable/ic_inmobiliaria_contrato"
+                android:title="@string/menu_contrato" />
+            <item
+                android:id="@+id/nav_close"
+                android:icon="@drawable/ic_inmobiliaria_close"
+                android:title="@string/menu_close" />
+        </menu>
+    </item>
+
+</menu>
