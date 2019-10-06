@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -12,236 +14,231 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textColor="@color/colorPrimaryDark"
         android:text="@string/propietario_edit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textName"
         android:layout_width="350dp"
         android:layout_height="30dp"
+        android:layout_below="@+id/text_propietario"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="41dp"
         android:text="Nombre"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_propietario" />
+        android:textSize="12dp" />
 
     <EditText
         android:id="@+id/name"
         android:layout_width="365dp"
         android:layout_height="36dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:textSize="15dp"
-        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/textName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="26dp"
         android:backgroundTint="#CAC7C7"
+        android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textName" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/textLastName"
         android:layout_width="380dp"
         android:layout_height="30dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
         android:text="Apellido"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        android:textSize="12dp" />
 
     <EditText
         android:id="@+id/last_name"
         android:layout_width="365dp"
         android:layout_height="36dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:textSize="15dp"
-        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/textLastName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="26dp"
         android:backgroundTint="#CAC7C7"
+        android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textLastName" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/textDni"
         android:layout_width="350dp"
         android:layout_height="30dp"
+        android:layout_below="@+id/last_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="41dp"
         android:text="Dni"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.028"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/last_name" />
+        android:textSize="12dp" />
 
     <EditText
         android:id="@+id/editDni"
         android:layout_width="365dp"
         android:layout_height="36dp"
-        android:layout_marginStart="20dp"
-        android:ems="10"
-        android:textSize="15dp"
-        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/textDni"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="26dp"
         android:backgroundTint="#CAC7C7"
+        android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDni" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/textAddress"
         android:layout_width="350dp"
         android:layout_height="30dp"
+        android:layout_below="@+id/editDni"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="41dp"
         android:text="Domicilio"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.028"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editDni" />
+        android:textSize="12dp" />
 
     <EditText
         android:id="@+id/editAddress"
         android:layout_width="365dp"
         android:layout_height="36dp"
+        android:layout_below="@+id/textAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
-        android:ems="10"
-        android:textSize="15dp"
-        android:textColor="@color/colorPrimary"
+        android:layout_marginEnd="26dp"
         android:backgroundTint="#CAC7C7"
+        android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textAddress" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/textTel"
         android:layout_width="350dp"
         android:layout_height="30dp"
+        android:layout_below="@+id/editAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="41dp"
         android:text="Teléfono"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editAddress" />
+        android:textSize="12dp" />
 
     <EditText
         android:id="@+id/editTel"
         android:layout_width="365dp"
         android:layout_height="36dp"
+        android:layout_below="@+id/textTel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
-        android:ems="10"
-        android:textSize="15dp"
-        android:textColor="@color/colorPrimary"
+        android:layout_marginEnd="26dp"
         android:backgroundTint="#CAC7C7"
+        android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTel" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/texEmail"
         android:layout_width="350dp"
         android:layout_height="30dp"
+        android:layout_below="@+id/editTel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="41dp"
         android:text="E-mail"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTel" />
+        android:textSize="12dp" />
+
 
     <EditText
         android:id="@+id/editEmail"
         android:layout_width="365dp"
         android:layout_height="36dp"
-        android:layout_marginStart="20dp"
-        android:ems="10"
-        android:textSize="15dp"
-        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/texEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="#CAC7C7"
+        android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/texEmail" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/textPass"
         android:layout_width="350dp"
         android:layout_height="30dp"
+        android:layout_below="@+id/editEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="41dp"
         android:text="Password"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
-
+        android:textSize="12dp" />
 
     <EditText
         android:id="@+id/edit_pass"
         android:layout_width="365dp"
         android:layout_height="36dp"
+        android:layout_below="@+id/textPass"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
-        android:ems="10"
-        android:textSize="15dp"
-        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="26dp"
         android:backgroundTint="#CAC7C7"
+        android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPass" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
 
     <Button
         android:id="@+id/btn_edit"
-        android:layout_width="wrap_content"
+        android:layout_width="206dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_pass"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="103dp"
         android:background="@drawable/button_blue"
         android:text="EDITAR"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_pass" />
+        android:textColor="#ffffff" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
+</ScrollView>
